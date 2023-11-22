@@ -1,4 +1,3 @@
-// EmpresaCard.js
 import React, { useState } from 'react';
 import './EmpresaCard.css';
 
@@ -13,6 +12,13 @@ const EmpresaCard = ({ empresa }) => {
 
   return (
     <div className="empresa-card">
+      {empresa.logoUrl && 
+      <div className='contenedor-logo'>
+        
+      <img src={empresa.logoUrl} alt={`Logo de ${empresa.nombre}`} />
+      
+      </div>}
+
       <h3>{empresa.nombre}</h3>
       <p>
         {mostrarDescripcionCompleta ? empresa.descripcion : `${descripcionAcortada}...`}

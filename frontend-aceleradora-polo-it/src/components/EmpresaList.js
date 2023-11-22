@@ -1,4 +1,3 @@
-// EmpresaList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import EmpresaCard from './EmpresaCard';
@@ -29,9 +28,10 @@ const EmpresaList = () => {
     setEmpresasFiltradas(empresasFiltradas);
   };
 
+/*
   const abrirModalContacto = (empresa) => {
     setEmpresaSeleccionada(empresa);
-  };
+  };*/
 
   const cerrarModalContacto = () => {
     setEmpresaSeleccionada(null);

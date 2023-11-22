@@ -4,7 +4,7 @@ const fs = require('fs');
 const Empresa = require('./empresaModel');
 
 
-const connectionString = MONGODB_URI
+const connectionString = process.env.MONGODB_URI
 
 
 
@@ -20,13 +20,14 @@ db.once('open', async () => {
   console.log('Conexión exitosa a la base de datos MongoDB');
 
   // Lee el archivo JSON
-  const rawData = fs.readFileSync('Productos&Servicios-PoloIT5.json', 'utf-8');
+  const rawData = fs.readFileSync('Productos&Servicios-PoloIT6.json', 'utf-8');
   const empresasData = JSON.parse(rawData);
 
   // Mapeo de los campos y creación de objetos Empresa
   const empresasMapeadas = empresasData.map((empresa) => ({
     nombre: empresa['Empresa'],
     descripcion: empresa['Breve Descripción de tu empresa'],
+    logoUrl: empresa['Logo Url'],
     hardwareFabricacionPropia: empresa['Hardware Fabricación Propia'],
     hardwareTerceros: empresa['Hardware de Terceros (Representación Comercial)'],
     softwarePropio: empresa['Software Propio'],

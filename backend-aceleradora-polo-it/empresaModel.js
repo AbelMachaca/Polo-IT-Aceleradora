@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const empresaSchema = new mongoose.Schema({
     nombre: String,
     descripcion: String,
+    logoUrl: String,
     hardwareFabricacionPropia: String,
     hardwareTerceros: String,
     softwarePropio: String,

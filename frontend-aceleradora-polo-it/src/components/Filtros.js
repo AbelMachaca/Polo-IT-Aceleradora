@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './Filtros.css';
 
 const Filtros = ( {onFiltrarEmpresas}) => {
   const [categoria, setCategoria] = useState('hardware');
@@ -22,6 +23,7 @@ const Filtros = ( {onFiltrarEmpresas}) => {
       console.error(error);
     }
   };
+  
 
   return (
     <div>
@@ -42,10 +44,7 @@ const Filtros = ( {onFiltrarEmpresas}) => {
           <select onChange={handleFiltroEspecificoChange} value={filtroEspecifico}>
             <option value="hardware-fabricacion-propia">Hardware Fabricación Propia</option>
             <option value="hardware-terceros">Hardware de Terceros (Representación Comercial)</option>
-           
-            
-            
-            {/* Agrega otras opciones según sea necesario */}
+            {}
           </select>
         </div>
       )}
@@ -68,8 +67,7 @@ const Filtros = ( {onFiltrarEmpresas}) => {
             <option value="cloud">Cloud</option>
             <option value="big-data">Big Data</option>
             <option value="servicios-verticales">Servicios Verticales</option>
-            
-            {/* Agrega otras opciones según sea necesario */}
+            {}
           </select>
         </div>
       )}
@@ -82,9 +80,7 @@ const Filtros = ( {onFiltrarEmpresas}) => {
             <option value="software-propio-verticales">Software Propio Verticales</option>
             <option value="software-terceros">Software de Terceros</option>
             <option value="software-terceros-verticales">Software de Terceros Verticales</option>
-            
-            
-            {/* Agrega otras opciones según sea necesario */}
+            {}
           </select>
         </div>
       )}
@@ -98,7 +94,7 @@ const Filtros = ( {onFiltrarEmpresas}) => {
            
             
             
-            {/* Agrega otras opciones según sea necesario */}
+            {}
           </select>
         </div>
       )}  
@@ -109,10 +105,7 @@ const Filtros = ( {onFiltrarEmpresas}) => {
           <h3>Filtrar Cobertura Geográfica Específicos</h3>
           <select onChange={handleFiltroEspecificoChange} value={filtroEspecifico}>
             <option value="cobertura-geografica">Cobertura Geográfica</option>
-           
-            
-            
-            {/* Agrega otras opciones según sea necesario */}
+            {}
           </select>
         </div>
       )}    
@@ -123,15 +116,12 @@ const Filtros = ( {onFiltrarEmpresas}) => {
           <h3>Filtrar Tamaño de Empresa Específicos</h3>
           <select onChange={handleFiltroEspecificoChange} value={filtroEspecifico}>
             <option value="tamano-empresa">Tamaño de Empresa</option>
-           
-            
-            
-            {/* Agrega otras opciones según sea necesario */}
+            {}
           </select>
         </div>
       )}    
 
-      <button onClick={filtrarEmpresas}>Filtrar</button>
+      <button className='filter-button active' onClick={filtrarEmpresas}>Filtrar</button>
     </div>
   );
 };
