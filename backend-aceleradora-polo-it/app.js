@@ -18,7 +18,7 @@ app.get('/', (req, res) =>{
 });
 
 app.get('/empresas', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   try {
     let empresas;
 
@@ -43,7 +43,7 @@ app.get('/empresas', async (req, res) => {
 
 
 app.get('/empresas/hardware/hardware-fabricacion-propia', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   const hardwareFabricacionPropia = req.query.hardwareFabricacionPropia;
   try {
     const empresasFiltradas = await Empresa.find({
@@ -57,7 +57,7 @@ app.get('/empresas/hardware/hardware-fabricacion-propia', async (req, res) => {
 
 
   app.get('/empresas/hardware/hardware-terceros', async (req, res) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
     const hardwareTerceros = req.query.hardwareTerceros;
     try {
       const empresasFiltradas = await Empresa.find({
@@ -72,7 +72,7 @@ app.get('/empresas/hardware/hardware-fabricacion-propia', async (req, res) => {
 
 
 app.get('/empresas/software/software-propio', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   const softwarePropio = req.query.softwarePropio;
   try {
     const empresasFiltradas = await Empresa.find({
@@ -86,7 +86,7 @@ app.get('/empresas/software/software-propio', async (req, res) => {
 
 
 app.get('/empresas/software/software-propio-verticales', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   const softwarePropioVerticales = req.query.softwarePropioVerticales;
   try {
     const empresasFiltradas = await Empresa.find({
@@ -100,7 +100,7 @@ app.get('/empresas/software/software-propio-verticales', async (req, res) => {
 
 
 app.get('/empresas/software/software-terceros', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   const softwareTerceros = req.query.softwareTerceros;
   try {
     const empresasFiltradas = await Empresa.find({
@@ -113,7 +113,7 @@ app.get('/empresas/software/software-terceros', async (req, res) => {
 });
 
 app.get('/empresas/software/software-terceros-verticales', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   const softwareTercerosVerticales = req.query.softwareTercerosVerticales;
   try {
     const empresasFiltradas = await Empresa.find({
@@ -127,7 +127,7 @@ app.get('/empresas/software/software-terceros-verticales', async (req, res) => {
 
 
 app.get('/empresas/servicios/desarrollo', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   
   try {
     const empresasFiltradas = await Empresa.find({
@@ -140,7 +140,7 @@ app.get('/empresas/servicios/desarrollo', async (req, res) => {
 });
 
 app.get('/empresas/servicios/soporte-customizacion', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   
   try {
     const empresasFiltradas = await Empresa.find({
@@ -155,7 +155,7 @@ app.get('/empresas/servicios/soporte-customizacion', async (req, res) => {
 
 
 app.get('/empresas/servicios/soluciones-iot', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   
   try {
     const empresasFiltradas = await Empresa.find({
@@ -169,7 +169,7 @@ app.get('/empresas/servicios/soluciones-iot', async (req, res) => {
 
 
 app.get('/empresas/servicios/mantenimiento-soporte', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   
   try {
     const empresasFiltradas = await Empresa.find({
@@ -183,7 +183,7 @@ app.get('/empresas/servicios/mantenimiento-soporte', async (req, res) => {
 
 
 app.get('/empresas/servicios/consultoria', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   
   try {
     const empresasFiltradas = await Empresa.find({
@@ -197,7 +197,7 @@ app.get('/empresas/servicios/consultoria', async (req, res) => {
 
 
 app.get('/empresas/servicios/desarrollo-aplicaciones', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   
   try {
     const empresasFiltradas = await Empresa.find({
@@ -211,7 +211,7 @@ app.get('/empresas/servicios/desarrollo-aplicaciones', async (req, res) => {
 
 
 app.get('/empresas/servicios/capacitacion', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   
   try {
     const empresasFiltradas = await Empresa.find({
@@ -223,7 +223,7 @@ app.get('/empresas/servicios/capacitacion', async (req, res) => {
   }
 });
 app.get('/empresas/servicios/testing', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   
   try {
     const empresasFiltradas = await Empresa.find({
@@ -237,7 +237,7 @@ app.get('/empresas/servicios/testing', async (req, res) => {
 
 
 app.get('/empresas/servicios/cloud', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   
   try {
     const empresasFiltradas = await Empresa.find({
@@ -251,7 +251,7 @@ app.get('/empresas/servicios/cloud', async (req, res) => {
 
 
 app.get('/empresas/servicios/big-data', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   
   try {
     const empresasFiltradas = await Empresa.find({
@@ -265,7 +265,7 @@ app.get('/empresas/servicios/big-data', async (req, res) => {
 
 
 app.get('/empresas/servicios/servicios-verticales', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   const serviciosVerticales = req.query.serviciosVerticales;
   try {
     const empresasFiltradas = await Empresa.find({
@@ -281,7 +281,7 @@ app.get('/empresas/servicios/servicios-verticales', async (req, res) => {
 
 
 app.get('/empresas/relaciones-comerciales/actividades-exterior', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   const actividadesExterior = req.query.actividadesExterior;
   try {
     const empresasFiltradas = await Empresa.find({
@@ -296,7 +296,7 @@ app.get('/empresas/relaciones-comerciales/actividades-exterior', async (req, res
 
 
 app.get('/empresas/cobertura/cobertura-geografica', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   const coberturaGeografica = req.query.coberturaGeografica;
   try {
     const empresasFiltradas = await Empresa.find({
@@ -312,7 +312,7 @@ app.get('/empresas/cobertura/cobertura-geografica', async (req, res) => {
 
 
 app.get('/empresas/otros/tamano-empresa', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   const tamanoEmpresa = req.query.tamanoEmpresa;
   try {
     const empresasFiltradas = await Empresa.find({
@@ -328,7 +328,7 @@ app.get('/empresas/otros/tamano-empresa', async (req, res) => {
 
 
 app.get('/empresas/hardware', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   try {
       const empresasHardware = await Empresa.find({
           $or: [
@@ -346,7 +346,7 @@ app.get('/empresas/hardware', async (req, res) => {
 
 
 app.get('/empresas/software', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   try {
       const empresasSoftware = await Empresa.find({
           $or: [
@@ -364,7 +364,7 @@ app.get('/empresas/software', async (req, res) => {
 
 
 app.get('/empresas/servicios', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   try {
       const empresasServicios = await Empresa.find({
           $or: [
@@ -389,7 +389,7 @@ app.get('/empresas/servicios', async (req, res) => {
 
 
 app.get('/empresas/relaciones-comerciales', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   try {
       const empresasRelacionesComerciales = await Empresa.find({
           'actividadesExterior': { $exists: true, $ne: '' }
@@ -401,7 +401,7 @@ app.get('/empresas/relaciones-comerciales', async (req, res) => {
 });
 
 app.get('/empresas/cobertura', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   try {
       const empresasCobertura = await Empresa.find({
           'coberturaGeografica': { $exists: true, $ne: '' }
@@ -413,7 +413,7 @@ app.get('/empresas/cobertura', async (req, res) => {
 });
 
 app.get('/empresas/otros', async (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://frontend-polo-it.onrender.com');
   try {
       const empresasOtros = await Empresa.find({
           $or: [
