@@ -13,6 +13,7 @@ app.set('view engine', 'ejs');
 */
 
 app.use(express.static(path.join(__dirname)));
+app.use(cors());
 app.get('/', (req, res) =>{
   res.send('')
 });
@@ -438,7 +439,7 @@ app.use((req, res) => {
   res.status(404).json({ error: 'Ruta no encontrada' });
 });
 
-app.use(cors());
+
 
 
 app.listen(PORT, () => {

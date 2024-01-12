@@ -17,7 +17,7 @@ const Filtros = ( {onFiltrarEmpresas}) => {
 
   const filtrarEmpresas = async () => {
     try {
-      const response = await axios.get(`https://backend-polo-it.onrender.com/empresas/${categoria}/${filtroEspecifico}`);
+      const response = await axios.get(`https://polo-it-aceleradora-production.up.railway.app/empresas/${categoria}/${filtroEspecifico}`);
       onFiltrarEmpresas(response.data);
     } catch (error) {
       console.error(error);

@@ -13,7 +13,7 @@ const EmpresaList = () => {
   useEffect(() => {
     const fetchEmpresas = async () => {
       try {
-        const response = await axios.get('https://backend-polo-it.onrender.com/empresas');
+        const response = await axios.get('https://polo-it-aceleradora-production.up.railway.app/empresas');
         setEmpresas(response.data);
         setEmpresasFiltradas(response.data); // Inicialmente, muestra todas las empresas
       } catch (error) {
